@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas Demo</title>
+  <style>
+    canvas {
+      cursor: pointer;
+      border: 1px solid black;
+    }
+    .simple-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .button-area {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+    #right-area {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 20px;
+    }
+    button {
+      margin: 3px;
+    }
+    label {
+      margin: 3px;
+    }
+</style>
+</head>
+
+<body>
+  <div class = "simple-container">
+   <div id = "left-area"> 
+    <canvas id="canvas" width="800" height="600"></canvas>
+  <div id = "button-area-0" class="button-area">
+    <button onclick="deleteRect()">Delete Rectangle</button> 
+    <button onclick="WebSocketTest()">testSocket</button>
+    <!-- <button onclick="send()">send</button> -->
+  </div>
+  <div id="img-container"></div>
+</div>
+<div id = "right-area">
+  <label for="project-name">Project name:</label>
+  <div class="simple-container">
+  <input type="text" id="project-name" name="project-name" style="width: 100%; margin: 2px;">
+  </div>
+  <div class="button-area">
+  <button onclick="create()">Create</button>
+  <button onclick="join()">Join/Load</button>
+  <button onclick="save()" disabled = true id = "save">Save</button>
+  </div>
+</div>
+</div>
+  <script src="{{ url_for('static', filename="js/websocketClient.js") }}"></script>
+  <script src="{{ url_for('static', filename="js/index.js") }}"></script>
+</body>
+
+</html>
