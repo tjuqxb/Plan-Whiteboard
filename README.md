@@ -13,8 +13,8 @@ This is a demo for a Collaboration white board.
 4 Supports PC and mobile devices
 
 ### Digram for Synchronization
-![d1](00.png =600x)
-![d2](01.png =600x)
+<img width="600" src="00.png"/>
+<img width="600" src="01.png"/>
 
 ### run the app
 
