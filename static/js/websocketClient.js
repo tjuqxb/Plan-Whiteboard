@@ -1,4 +1,4 @@
-let ws = new WebSocket('ws://192.168.1.82:9000');
+let ws = new WebSocket('ws://Plan-Whiteboard.tjuqxb.repl.co:9000');
 function WebSocketTest() {
   if ('WebSocket' in window) {
     alert('support WebSocket!');
