@@ -30,4 +30,4 @@ To test it on mobile device, please change the file `.\static\js\websocketClient
 let ws = new WebSocket('ws://localhost:9000');
 ```
 
-Using the local server IP address. The app(static web page) is running at loacal server port 5000.
+Using the local server IP address. The app(static web page) is running at local server port 5000.
