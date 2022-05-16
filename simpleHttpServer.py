@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.debug = 'DEBUG' in os.environ
 
 
-@app.route('/app')
+@app.route('/')
 def serve():
     return render_template("index.html")
 
