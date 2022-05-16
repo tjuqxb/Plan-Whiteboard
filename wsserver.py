@@ -141,7 +141,7 @@ async def main_logic(websocket, path):
         for p in tempProjects.values():
             p.removeClient(websocket)
 
-start_server = websockets.serve(main_logic, '0.0.0.0/ws', 9000)
+start_server = websockets.serve(main_logic, '0.0.0.0', 9000)
 
 
 asyncio.get_event_loop().run_until_complete(
