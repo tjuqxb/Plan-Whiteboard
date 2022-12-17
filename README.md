@@ -1,7 +1,8 @@
 ﻿# Multi-Canvas
 
 This is a demo for a Collaboration white board.
-
+Can support multiple person collaborating on the same whiteboard.  
+website: <a>https://plan-whiteboard-1.tjuqxb.repl.co/</a>
 ### Basic functions:
 
 1 Create/save/open projects  
